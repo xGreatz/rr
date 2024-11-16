@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أحبك</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #f06, #ffba00);
+        color: white;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      p {
+        font-size: 1.5em;
+        margin-top: 0;
+        padding: 0 10%;
+      }
+
+      .heart {
+        font-size: 50px;
+        color: red;
+        animation: heartbeat 1s infinite;
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .btn {
+        background-color: #ff6347;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>أريد أن أخبرك بشيء مهم</h1>
+    <p>
+      لقد احتفظت بمشاعري لفترة طويلة، ولكنني لا أستطيع أن أخفيها بعد الآن...
+    </p>
+    <p>
+      <span class="heart">❤️</span> أنا أحبك، أكثر مما يمكن للكلمات أن تعبر عنه.
+    </p>
+    <a href="mailto:someone@example.com" class="btn">أرسل لي ردك</a>
+  </body>
+</html>
